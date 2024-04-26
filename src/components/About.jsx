@@ -1,14 +1,28 @@
 import React from "react";
+import Gambar from "../assets/Ucup-bg.png";
 
 const About = () => {
   return (
-    <section className="bg-gradient-to-b from-zinc-800 to-zinc-700 from-10%" id="about">
-      <h1 className=" pt-3 text-white font-roboto text-2xl text-center font-thin md:text-3xl lg:text-4xl lg:mb-2"> About Me</h1>
-      <div className="p-4 container mx-auto md:flex md:px-10 lg:px-28 md:items-center ">
-        <div className=" bg-red-500 w-40 h-48 mx-auto md:w-[1500px] md:mr-7 lg:mr-11">
-          <img src="../assets/asset-ucup.png" className="object-cover w-full h-full" alt="" />
+    <section className="bg-neutral-800 pb-3 md:pb-7">
+      <h1 className="text-center text-white text-3xl font-medium font-viga md:mb-5 pt-5">
+        About <span className="text-sky-500">Me</span>
+      </h1>
+      <div className="container mx-auto md:flex md:items-center">
+        <div className="w-auto p-5 md:w-1/2">
+          <div className="w-3/4 h-3/4 mx-auto p-2 rounded-lg border-4 border-sky-500 md:h-auto md:w-auto">
+            <img src={Gambar} alt="" className="rounded-lg object-contain" />
+          </div>
         </div>
-        <p className=" mt-4 text-justify text-slate-400 font-mono text-sm md:mt-0 lg:text-md xl:text-lg">Hi!👋👋 I'm Yusup Maulana, a graduate of the Information Systems Study Program at Institut Teknologi Adhi Tama Surabaya. I am a full stack developer. During my college years, I was actively involved in various organizations, namely Laboratory Assistant and Surabaya Dev. Apart from that, during my studies, I was also active with my friends working on several website projects for several companies. This can give me the opportunity to develop skills in programming, working in a team, and managing projects efficiently. If you are interested in discussing further or have any questions, please feel free to contact me. Thank you for visiting my page!</p>
+        <div className="w-auto h-auto px-5 md:w-full">
+          <p className="text-white mb-3 text-justify">
+            Hello!👋👋👋 My name is <span className="text-sky-500 font-mono font-medium">Yusup Maulana</span>, I graduated in Information System at Institut Teknologi Adhi Tama Surabaya. I'm full stack developer and interested in web development. During the lecture period, I actively participated in internal campus organizations, namely the Information Systems Laboratory Assistant and external campus organizations, namely{" "}
+            <span className="text-green-500 font-viga">
+              <a href="https://www.surabayadev.org">Surabaya Dev</a>
+            </span>
+            .
+          </p>
+          <p className="text-white text-justify">Apart from that, I and my college friends worked on several projects from several companies to improve the web development skills that we had received during the lecture period.</p>
+        </div>
       </div>
     </section>
   );
